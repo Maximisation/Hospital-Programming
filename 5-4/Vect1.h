@@ -4,8 +4,7 @@
 
 #ifndef UNTITLED2_VECT1_H
 #define UNTITLED2_VECT1_H
-#ifndef HW5EX2_CPP_VECT_H
-#define HW5EX2_CPP_VECT_H
+
 #include <iostream>
 #include <vector>
 #include <cmath>
@@ -39,6 +38,5 @@ double module(Vect a){
     }
     return sqrt(result);
 }
-#endif //HW5EX2_CPP_VECT_H
 
 #endif //UNTITLED2_VECT1_H
