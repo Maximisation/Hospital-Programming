@@ -39,17 +39,11 @@ Jesus Jesus::operator--(int) {
     return t;
 }
 
-double ToDouble(Jesus h){
-    double k=double(h.a)/double(h.b);
-    return k;
-}
-
 
 int main() {
     std::cout<< "Input the numenator and denominator:"<<std::endl;
     int a,b;
     std::cin >> a >>b;
     Jesus h(a,b);
-    Jesus h1=h+1,h2=7*h;
-    std::cout << h <<" "<<h1<<" "<<h2;
+    std::cout << double (h);
 }

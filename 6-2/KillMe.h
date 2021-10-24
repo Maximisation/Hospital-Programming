@@ -44,12 +44,15 @@ public:
     friend bool operator<(Jesus h,int l);
     friend bool operator<(int l, Jesus h);
 
+    explicit operator double() const {
+        return double(a)/double(b);
+    }
+
     Jesus& operator++( );
     Jesus& operator--( );
     Jesus operator++(int );
     Jesus operator--(int );
 
-    friend double ToDouble(Jesus h);
 
     friend std::ostream& operator<<(std::ostream& ostr, Jesus& h){
         h= sokrat(h);
