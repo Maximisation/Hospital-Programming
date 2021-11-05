@@ -47,6 +47,9 @@ int main() {
     std::cout<< "Input the numenator and denominator:"<<std::endl;
     int a,b;
     std::cin >> a >>b;
-    Jesus h(a,b);
-    std::cout << double (h);
+    try{
+        Jesus x(a,b);
+    } catch(std::exception& ex){
+        std::cout<<ex.what()<<std::endl;
+    }
 }
